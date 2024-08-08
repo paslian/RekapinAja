@@ -21,6 +21,10 @@ const page: React.FC<iPengeluaran> = async ({ params }) => {
     return formattedDate === month;
   });
 
+  filteredPengeluarans.sort((a, b) => {
+    return new Date(b.tanggal).getTime() - new Date(a.tanggal).getTime();
+  });
+
   const totalPengeluaranPerKategori: Record<string, number> =
     filteredPengeluarans.reduce((acc, pengeluaran) => {
       if (acc[pengeluaran.kategori]) {

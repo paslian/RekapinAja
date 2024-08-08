@@ -28,3 +28,8 @@ model Pemasukan {
   besaran Int
   tanggal DateTime @default(now())
 }
+
+model AllowedEmail {
+  id String @id @default (cuid())
+  email String @unique
+}

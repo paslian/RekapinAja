@@ -31,7 +31,8 @@ const CreatePengeluaranForm = () => {
             Apa Kategori Pengeluarannya?
           </option>
           <option>Makanan dan minuman</option>
-          <option>Listrik, air, dan gas</option>
+          <option>Listrik</option>
+          <option>BlueGas</option>
           <option>Biaya transportasi (bensin, ongkos kendaraan umum)</option>
           <option>Kesehatan (obat-obatan, asuransi kesehatan)</option>
           <option>Pakaian</option>
@@ -39,6 +40,7 @@ const CreatePengeluaranForm = () => {
           <option>Komunikasi (pulsa, paket data, wifi)</option>
           <option>Pembayaran cicilan kredit (mobil, barang elektronik)</option>
           <option>Hadiah atau sumbangan</option>
+          <option>Gereja(persembahan, sumbangan, uang kas, parkir)</option>
           <option>Lainnya</option>
         </select>
         <div className="kategori-error" aria-live="polite" aria-atomic="true">
