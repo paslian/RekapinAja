@@ -11,7 +11,6 @@ const Navbar = () => {
   return (
     <>
       <div className="h-20 w-full border-b-2 flex items-center justify-between p-4 bg-white shadow-md">
-        {/* Logo and Menu for Desktop */}
         <div className="flex items-center space-x-4">
           <Link href="/">
             <Image
@@ -24,10 +23,10 @@ const Navbar = () => {
           </Link>
           <ul className="hidden md:flex space-x-4">
             <li className="p-2 cursor-pointer">
-              <Link href="/rekap">Rekap</Link>
+              <Link href="/pengeluaran">Pengeluaran</Link>
             </li>
             <li className="p-2 cursor-pointer">
-              <Link href="/tambah">Tambah</Link>
+              <Link href="/pemasukan">Pemasukan</Link>
             </li>
           </ul>
         </div>
@@ -98,10 +97,10 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="p-2 cursor-pointer border-b">
-            <Link href="/rekap">Rekap</Link>
+            <Link href="/pengeluaran">Pengeluaran</Link>
           </li>
           <li className="p-2 cursor-pointer border-b">
-            <Link href="/tambah">Tambah</Link>
+            <Link href="/pemasukan">Pemasukan</Link>
           </li>
         </ul>
         {session?.data?.user && (
